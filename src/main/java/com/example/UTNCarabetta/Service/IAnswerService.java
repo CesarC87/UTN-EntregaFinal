@@ -4,13 +4,12 @@
  */
 package com.example.UTNCarabetta.Service;
 
-import com.example.UTNCarabetta.Model.Category;
+import com.example.UTNCarabetta.Model.Answer;
 import java.util.List;
 
-
-public interface ICategoryService {
-    public List<Category> verCategories();    
-    public void crearCategory (Category cat); 
-    public void borrarCategory (Long id);
-    public Category buscarCategory (Long id);
+public interface IAnswerService {
+    public List<Answer> verAnswers();    
+    public void crearAnswer (Answer ans); 
+    public void borrarAnswer (Long id);
+    public Answer buscarAnswer (Long id);
 }

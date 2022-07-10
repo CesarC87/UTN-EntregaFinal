@@ -13,18 +13,16 @@ import lombok.Setter;
 
 @Getter @Setter
 @Entity
-public class Category {
+public class Answer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long categoryId;
-    private String name;
+    private Long answerId;
+    private String answer;
     private String description;
     
-    public Category(){}
+    public Answer(){}
     
-    public Category(Long categoryId, String name, String description){
-        this.categoryId = categoryId;
-        this.name = name;
-        this.description = description;
+    public Answer(Long answerId, String answer){
+        this.answer = answer;        
     }
 }
