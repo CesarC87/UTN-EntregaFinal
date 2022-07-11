@@ -4,8 +4,8 @@
  */
 package com.example.UTNCarabetta.Controller;
 
-import com.example.UTNCarabetta.Model.Question;
-import com.example.UTNCarabetta.Service.IQuestionService;
+import com.example.UTNCarabetta.Model.Answer;
+import com.example.UTNCarabetta.Service.IAnswerService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
