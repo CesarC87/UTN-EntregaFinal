@@ -35,9 +35,5 @@ public class AnswerController {
     @PostMapping
     public void crearAnswer(@RequestBody Answer ans){
         ansServ.crearAnswer(ans);
-    }
-    @DeleteMapping("/{id}")
-    public void borrarAnswer(Long id){
-        ansServ.borrarAnswer(id);
-    }
+    }    
 }

@@ -9,7 +9,6 @@ import java.util.List;
 
 public interface IAnswerService {
     public List<Answer> verAnswers();    
-    public void crearAnswer (Answer ans); 
-    public void borrarAnswer (Long id);
+    public void crearAnswer (Answer ans);     
     public Answer buscarAnswer (Long id);
 }

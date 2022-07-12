@@ -28,10 +28,5 @@ public class AnswerService implements IAnswerService{
     @Override
     public void crearAnswer(Answer ans) {
     ansRepo.save(ans);
-    }
-
-    @Override
-    public void borrarAnswer(Long id) {
-        ansRepo.deleteById(id);
-    }
+    }    
 }

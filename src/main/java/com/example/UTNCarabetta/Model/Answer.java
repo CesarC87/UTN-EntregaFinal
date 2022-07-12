@@ -18,11 +18,13 @@ public class Answer {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long answerId;
     private String answer;
-    private String description;
+    private boolean correct;    
     
     public Answer(){}
     
-    public Answer(Long answerId, String answer){
-        this.answer = answer;        
+    public Answer(Long answerId, String answer, boolean correct){
+        this.answerId = answerId;   
+        this.answer = answer;
+        this.correct = correct;
     }
 }
