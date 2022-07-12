@@ -17,14 +17,32 @@ public class Answer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long answerId;
+    private Long questionId;
     private String answer;
     private boolean correct;    
     
-    public Answer(){}
-    
-    public Answer(Long answerId, String answer, boolean correct){
-        this.answerId = answerId;   
-        this.answer = answer;
-        this.correct = correct;
-    }
+        public Long getAnswerId() {
+		return answerId;
+	}
+	public void setAnswerId(Long answerId) {
+		this.answerId = answerId;
+	}
+        public Long getQuestionId() {
+		return questionId;
+	}
+	public void setQuestionId(Long questionId) {
+		this.questionId = questionId;
+	}
+	public String getAnswer() {
+		return answer;
+	}
+	public void setAnswer(String answer) {
+		this.answer = answer;
+	}
+	public boolean getCorrect() {
+		return correct;
+	}
+	public void setCorrect(boolean correct) {
+		this.correct = correct;
+	}
 }
