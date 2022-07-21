@@ -15,22 +15,18 @@ public class CategoryService implements ICategoryService{
     @Autowired
     public CategoryRepository catRepo;
     
-    @Override
     public List<Category> verCategories() {
     return catRepo.findAll();
     }
     
-    @Override
     public Category buscarCategory(Long id) {
     return catRepo.findById(id).orElse(null);
     }  
 
-    @Override
     public void crearCategory(Category cat) {
     catRepo.save(cat);
     }
 
-    @Override
     public void borrarCategory(Long id) {
         catRepo.deleteById(id);
     }

@@ -15,22 +15,18 @@ public class QuestionService implements IQuestionService{
     @Autowired
     public QuestionRepository quesRepo;
     
-    @Override
     public List<Question> verQuestions() {
     return quesRepo.findAll();
     }
     
-    @Override
     public Question buscarQuestion(Long id) {
     return quesRepo.findById(id).orElse(null);
     }  
 
-    @Override
     public void crearQuestion(Question ques) {
     quesRepo.save(ques);
     }
 
-    @Override
     public void borrarQuestion(Long id) {
         quesRepo.deleteById(id);
     }

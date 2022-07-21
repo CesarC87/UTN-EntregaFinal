@@ -14,18 +14,15 @@ import org.springframework.stereotype.Service;
 public class AnswerService implements IAnswerService{
     @Autowired
     public AnswerRepository ansRepo;
-    
-    @Override
+
     public List<Answer> verAnswers() {
     return ansRepo.findAll();
     }
     
-    @Override
     public Answer buscarAnswer(Long id) {
     return ansRepo.findById(id).orElse(null);
     }  
 
-    @Override
     public void crearAnswer(Answer ans) {
     ansRepo.save(ans);
     }    

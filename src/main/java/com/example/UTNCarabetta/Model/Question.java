@@ -14,21 +14,9 @@ import lombok.Setter;
 @Getter @Setter
 @Entity
 public class Question {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long questionId;
     private String question;   
-    
-    public Long getQuestionId() {
-		return questionId;
-	}
-	public void setQuestionId(Long questionId) {
-		this.questionId = questionId;
-	}
-	public String getQuestion() {
-		return question;
-	}
-	public void setQuestion(String question) {
-		this.question = question;
-	}	
 }
